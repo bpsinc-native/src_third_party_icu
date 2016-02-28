@@ -20,7 +20,7 @@
       'U_USING_ICU_NAMESPACE=0',
     ],
     'conditions': [
-      ['component=="static_library"', {
+      ['component_build==0', {
         'defines': [
           'U_STATIC_IMPLEMENTATION',
         ],
@@ -532,7 +532,7 @@
               'source/common',
             ],
             'conditions': [
-              [ 'component=="static_library"', {
+              [ 'component_build==0', {
                 'defines': [
                   'U_STATIC_IMPLEMENTATION',
                 ],
